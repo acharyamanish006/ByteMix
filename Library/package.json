@@ -1,6 +1,6 @@
 {
   "name": "bytemix",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "ByteMix is a lightweight and versatile JavaScript game library designed to simplify game development with a focus on performance and flexibility.",
   "main": "index.js",
   "scripts": {

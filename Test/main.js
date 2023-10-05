@@ -1,3 +1,5 @@
-const helloWorld = require("bytemix")();
+console.log("he");
 
-console.log(helloWorld);
+import createWindow from "bytemix";
+
+createWindow();
