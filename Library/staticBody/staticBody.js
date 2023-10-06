@@ -23,7 +23,7 @@ export default class staticBody extends ByteMix {
     this.x += velocity;
     this.draw();
 
-    console.log(this.x);
+    // console.log(this.x);
   }
   moveLeft(velocity) {
     this.clearScreen();
