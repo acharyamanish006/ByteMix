@@ -17,4 +17,7 @@ export default class ByteMix {
     this.ctx.fillStyle = "red";
     this.ctx.fillRect(x, y, width, height);
   }
+  clearScreen() {
+    this.ctx.clearRect(0, 0, this.width, this.height);
+  }
 }

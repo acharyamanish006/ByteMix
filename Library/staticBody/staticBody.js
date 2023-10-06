@@ -7,8 +7,8 @@ export default class staticBody extends ByteMix {
     this.y = y;
     this.width = width;
     this.height = height;
-    this.ctx.fillStyle = "red";
-    this.ctx.fillRect(this.x, this.y, this.width, this.height);
+    // this.ctx.fillStyle = "red";
+    // this.ctx.fillRect(this.x, this.y, this.width, this.height);
   }
   clearScreen() {
     this.ctx.clearRect(this.x, this.y, this.width, this.height);
@@ -21,7 +21,7 @@ export default class staticBody extends ByteMix {
   moveRight(velocity) {
     this.clearScreen();
     this.x += velocity;
-    this.draw();
+    // this.draw();
 
     // console.log(this.x);
   }
@@ -47,8 +47,13 @@ export default class staticBody extends ByteMix {
     console.log(this.x);
   }
   addGravity(velocity) {
-    this.clearScreen();
+    // this.clearScreen();
     this.y += velocity;
-    this.draw();
+  }
+  append(sprite) {
+    // this.sprite = sprite;
+    console.log(sprite.y);
+    sprite.y = this.y;
+    sprite.x = this.x;
   }
 }

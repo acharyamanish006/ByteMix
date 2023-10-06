@@ -1,5 +1,4 @@
 export default function Collision(firstBody, secondBody) {
-  // if(firstBody.)
   if (
     firstBody.x < secondBody.x + secondBody.width &&
     firstBody.x + firstBody.width > secondBody.x &&
