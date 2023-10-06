@@ -50,10 +50,5 @@ export default class staticBody extends ByteMix {
     this.clearScreen();
     this.y += velocity;
     this.draw();
-
-    // setTimeout(() => {
-    //   this.addGravity(velocity);
-    // }, 1000 / 60);
   }
-  gameLoop() {}
 }
