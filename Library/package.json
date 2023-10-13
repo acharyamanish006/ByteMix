@@ -1,11 +1,17 @@
 {
   "name": "bytemix",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "type": "module",
   "description": "ByteMix is a lightweight and versatile JavaScript game library designed to simplify game development with a focus on performance and flexibility.",
-  "main": "index.js",
+  "main": "main.js",
+
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^4.4.5"
   },
   "repository": {
     "type": "git",
