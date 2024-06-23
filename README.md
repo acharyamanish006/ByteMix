@@ -4,6 +4,7 @@ Overview
 
 **ByteMix** is a lightweight and versatile JavaScript game library designed to simplify game development with a focus on performance and flexibility.
 
+![Screenshot from 2024-06-23 13-45-40](https://github.com/acharyamanish006/ByteMix/assets/100832817/ae74770b-2eee-48bd-9636-3aef99968f31)
 
 ## Table of Contents
 
