@@ -7,3 +7,11 @@ import Collision from "./Collision/collision";
 
 let canvas = document.createElement("canvas");
 let ctx = canvas.getContext("2d");
+module.exports = {
+  ByteMix,
+  GameLoop,
+  staticBody,
+  Sprite,
+  WindowCollision,
+  Collision,
+};
