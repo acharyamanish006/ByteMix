@@ -41,38 +41,37 @@ const byteMix = new ByteMix();
 
 let player = new staticBody(20, 20, 20, 20);
 
-// let player1 = new staticBody();
+ let player1 = new staticBody();
 
 let ship = new Sprite();
-// ship.loadImage("ship.png", posx, 20, 20, 20);
-
-// let ship = sprite.loadImage("ship", "./public/ship.png");
-// let ship = new Image();
-// ship.src = "ship.png";
-// console.log(ship);
-// player.drawImg(ship, 20, 20);
+ship.loadImage("ship.png", posx, 20, 20, 20);
+ let ship = sprite.loadImage("ship", "./public/ship.png"); let ship = new Image();
+ship.src = "ship.png";
+console.log(ship);
+player.drawImg(ship, 20, 20);
 
 // The `Init` function is called once at the beginning to initialize the game.
 
 GameLoop.Init = () => {
-  // ship.drawImage();
+  ship.drawImage();
 
   byteMix.createWindow(WIDTH, HEIGHT);
   console.log(byteMix.height);
-  // player.drawImg(ship, 20, 20, 20, 20);
+ player.drawImg(ship, 20, 20, 20, 20);
   player.append(ship);
 
-  // ship.onload = function () {
-  //   byteMix.drawImg(ship, 20, 20, 20, 20);
-  // };
-  // player.draw();
+  ship.onload = function () {
+    byteMix.drawImg(ship, 20, 20, 20, 20);
+ };
+  player.draw();
 
   document.addEventListener("click", () => {
     player.moveRight(Movement);
   });
   console.log("Initialization completed.");
-};
-
+  
+  };
+  
 // The `UpdateFrame` function is called 60 times per second to update the game state.
 
 GameLoop.UpdateFrame = () => {
@@ -86,17 +85,17 @@ GameLoop.UpdateFrame = () => {
     Movement = -Movement;
   }
 
-  // if (Collision(player, player1)) {
-  //   Movement = -Movement;
-  // }
+ if (Collision(player, player1)) {
+   Movement = -Movement;
+ }
 
-  // player.moveRight(Movement);
-  // ship.x += 4;
+ player.moveRight(Movement);
+ ship.x += 4;
   posx += 5;
-  // console.log(ship.x);
+ console.log(ship.x);
 
   player.addGravity(VELOCITY);
-  // player1.addGravity(VELOCITY);
+  player1.addGravity(VELOCITY);
   byteMix.clearScreen();
 };
 
@@ -104,3 +103,4 @@ GameLoop.UpdateFrame = () => {
 GameLoop.Render();
 
 ``
+```
